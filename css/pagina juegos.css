@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: wght@400; 500; 600; 700; 800&display=swap');
+
+| * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo: #1b1726;
+    --color-letras: #FF5733;
+    --blanco: #ffffff;
+    --general: 'poppins', sans-serif;
+    --letras-h2: 26px;
+    --parrafos: 18px;
+}
+
+body {
+    background-color: var(--fondo);
+    font-family: var(--general);
+}
+
+.naranja {
+    color: var(--color-letras);
+}
+
+header {
+    background-image: url(../imagenes/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.encabezado {
+    padding: 10px 14%;
+}
+
+.contenido-encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: var(--color-letras);
+    font-size: var(--letras-h2);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 24px;
+
+}
+
+#menu-icon {
+    display: none;
+}
+
+.navegacion a:hover {
+    color: #FF5733;
+    transition: all .3s ease-in-out;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+.encabezado-text {
+    margin-top: 120px;
+}
+
+.encabezado-text h1 {
+    color: var(--blanco);
+    letter-spacing: 1px;
+    font-size: 52px;
+}
+
+.encabezado-text p {
+    color: var(--blanco);
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    padding: 15px 40px;
+    border: 1px solid var(--color-letras);
+    border-radius: 30px;
+    color: var(--blanco);
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.enlaces a:hover {
+    background-color: var(--color-letras);
+    transition: all .3s ease-in-out;
+}
+
+.juegos-populares-text {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 40px 0;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img img {
+    height: 300px;
+    width: auto;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.text-juegos h2 {
+    color: var(--blanco);
+    font-size: 34px;
+    letter-spacing: 1px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card {
+    background-color: #2D2740;
+}
+
+.card img{
+    width: 450px;
+    height: auto;
+}
+
+.card-parrafo p {
+    padding: 25px 20px 5px 30px;
+    font-size: 22px;
+    color: var(--blanco);
+    font-family: var(--general);
+    font-weight: bold;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 40px 30px;
+}
+
+.precio p {
+    font-size: 20px;
+    color: var(--color-letras);
+    font-family: var(--general);
+    font-weight: 700;
+}
+
+.precio a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    border: 1px solid var(--color-letras);
+    border-radius: 30px;
+    background-color: var(--color-letras);
+}
+
+.suscribe-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #2D2740;
+    width: 500px;
+    height: 180px;
+    border-radius: 30px;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+.suscribe-text h2 {
+    font-size: 22px;
+    color: var(--blanco);
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.suscribe {
+    margin-top: 10px;
+    border: 10px;
+}
+
+input[type="email"] {
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.suscribe a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    border: 1px solid var(--color-letras);
+    border-radius: 30px;
+    background-color: var(--color-letras);
+}
+
+.logo-foooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.footer-navegacion {
+    color: #ffffff;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 24px;
+}
+
+.hamburguesa span {
+    width: 5rem;
+    height: 1rem;
+    border: 3px solid white;
+    background-color: var(--oscuro);
+    display: block;
+}
+
+@media(min-width: 768px) {
+    .hamburguesa {
+        display: none;
+    }
+}

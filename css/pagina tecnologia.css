@@ -45,6 +45,12 @@ a {
     width: 95%;
 }
 
+.btn-centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn-azul {
     padding: 1rem 4rem;
     font-weight: bold;
@@ -583,7 +589,12 @@ a {
     padding: 15px 50px;
     transition: all.3s ease-in-out;
 }
+@media (min-width:768px){
+    .input-contacto input[type="submit"]{
+        width: 100%;
+    }
 
+}
 .input-contacto input[type="submit"]:hover {
     background-color: var(--blanco);
     color: var(--azulClaro);
